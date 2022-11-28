@@ -1,69 +1,88 @@
-WB Robert the Dragon Slayer
-BW Page 
-
+Robert the Dragon Slayer
+•
 BW Once upon a time there was a young man named Robert. He was an alcoholic who loved driving.
 BW One day he was out partying with friends, and was offered a drink.
 WR 2: Accept the drink
 WR 3: Don't accept the drink
-
+•
 BW Robert drinks the beverage handed to him. He begins to feel woozy.
 BW He puts his hand to his pocket and feels the shape of his car keys. An idea starts to form in his head.
 WR 4: Go for a drive
 WR 5: Swallow the keys
-
+•
 BW Robert makes the wise decision not to take the drink.
 BW However, his alcohol addiction starts to act up, and Robert begins to feel the itch.
 WR 6: Scratch arm in the middle of the party
 WR 7: Head to the bathroom to scratch arm
-
+•
 BW Robert leaves the party, gets in his car and starts speeding down the road at 100 km/h in a school zone.
 BW He approaches a red light at a 4-way.
 WR 8: Stop
 WR 9: Run red light
-
+•
 BW Robert drops the keys down his gullet and chokes to death.
 RW GAME OVER
-
+•
 BW Robert pulls up his sleeve and begins scratching.
 BW All heads turn to the addict scratching away.
 WR 10: Scratch harder
 WR 4: Run out of party and hop in car
-
+•
 BW On your way to the bathroom, Robert is stopped by one of the party jocks.
 BW "Woah there, where are you going?"
 WR 11: Explain addiction
 WR 12: Stab him with car keys
-
+•
 BW Stopping abruptly throws Robert out of the windshield and he dies.
 RW GAME OVER
-
+•
 BW Robert miraculously passes through the 4-way traffic without getting hit.
 BW He continues onto the highway and begins to approach a dragon's lair.
 RW 13: Drive car into cave entrance
 RW 14: Leave car before entering
-
+•
 BW Robert starts scratching his arm furiously. Pieces of heroin needles fly everywhere.
 BW One of the party jocks approaches him to get him to stop.
 WR 12: Stab him with car keys
 WR 15: Stab him with heroin needle
-
+•
 BW Robert explains his addiction to the jock, who then helps Robert into drug rehab.
 RW GAME OVER
-
+•
 BW Robert plunges his car keys into the jock's stomach.
 BW The jock swings back and knocks Robert out.
 WR 16: Wake up in ER
 WR 17: Enter comatose state
-
+•
 BW Robert drives the car at top speed and slams into the dragon.
 BW The dragon glares angrily at him before breathing fire on his car, blowing Robert and his car to smithereens.
 RW Game Over
-
+•
 BW Robert creeps out of his car and into the cave and hides behind a stalagmite.
 BW Occupying much of the space of the cave is the dragon. He is sleeping.
 WR 18: Throw rock at dragon
 WR 19: Ask dragon for marijuana
-
+•
 BW The heroin steroids cause the jock to grow into a giant dragon.
-WR 18
-
+BW It roars and a spout of flame ccomes from its mouth.
+WR 18: Throw heroin needle at dragon
+WR 20: Splash alcohol at dragon
+•
+BW You don't wake up because you are dead.
+RW GAME OVER
+•
+BW In your coma, you dream of wacky adventures.
+WR 1: Dream of a party
+WR 17: Dream of waking up
+•
+BW It bounces off of the dragon, who doesn't even flinch.
+BW It then stomps on Robert, crushing him to death in on swift motion.
+RW GAME OVER
+•
+BW The dragon hands Robert a blunt. His eyes are quite red.
+BW Robert and the dragon spend the rest of your days smoking together.
+RW GAME OVER
+•
+BW The alcohol catches fire, and the dragon burns up and dies.
+BW Robert is forever regarded a powerful and renowned dragon slayer.
+RW GAME OVER
