@@ -24,7 +24,7 @@ namespace CYOA_Martel
 
         static string GetStory() //puts the story into a string from a text file
         {
-            return System.IO.File.ReadAllText("Story.txt");
+            return File.ReadAllText("Story.txt");
         }
         static string[] SplitStory() //splits the story into pages
         {
@@ -35,8 +35,8 @@ namespace CYOA_Martel
         {
             Console.SetCursorPosition(0, 0);
 
-            Console.BackgroundColor = ConsoleColor.Magenta;
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Black;
             
             Console.WriteLine("--- " + storyArray[0] + " ---"); //writes the story title
         }
@@ -47,8 +47,6 @@ namespace CYOA_Martel
             WriteTitle();
 
             currentPage = storyArray[page].Split('$');
-
-            Console.SetCursorPosition(0, 1);
 
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.White;
@@ -67,11 +65,30 @@ namespace CYOA_Martel
 
         static void PickPage()
         {
-            Console.WriteLine("Type \"save\" to save current game");
-            Console.WriteLine("Type \"load\" to load saved game");
-            Console.WriteLine("Type \"quit\" to return to menu");
-            Console.WriteLine();
-            Console.Write("Enter page number or command: ");
+            string input = Console.ReadLine();
+
+            if (input.ToLower() == "save")
+            {
+                //Save();
+            }
+            else if (input.ToLower() == "load")
+            {
+                //Load();
+            }
+            else if (input.ToLower() == "quit")
+            {
+                //Quit();
+            }
+            else
+            {
+                foreach (string s in currentPage[2].Split('&'))
+                {
+                    if (input == s)
+                    {
+                        WritePage(Int32.Parse(s));
+                    }
+                }
+            }
         }
 
         static void ShowChoices()
@@ -90,20 +107,41 @@ namespace CYOA_Martel
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write(currentPage[1].Split('&')[s]);
             }
+
             Console.WriteLine();
+            Console.Write("Type ");
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("\"save\"");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(" to save current game");
+            Console.WriteLine();
+            Console.Write("Type ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("\"load\"");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(" to load saved game");
+            Console.WriteLine();
+            Console.Write("Type ");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.Write("\"quit\"");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write(" to return to menu");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("Enter page number or command: ");
         }
 
         static bool GameOverText()
         {
             if (currentPage[1][0] == '!') //if reading game over text
             {
-                for (int i = 0; i < currentPage[1].Length - 3; i++) //writes "-" for the length of the game-over text minus 3
+                for (int i = 0; i < currentPage[1].Length; i++) //writes "-" for the length of the game-over text
                     Console.Write('-');
                 Console.WriteLine();
 
-                Console.Write(currentPage[1].Remove(0, 1));
+                Console.WriteLine(currentPage[1].Remove(0, 1));
 
-                for (int i = 0; i < currentPage[1].Length - 3; i++)
+                for (int i = 0; i < currentPage[1].Length; i++)
                     Console.Write('-');
 
                 Console.ReadKey(true);
@@ -121,6 +159,7 @@ namespace CYOA_Martel
                 Console.Clear();
                 Console.SetCursorPosition(0,0);
                 Console.WriteLine("ERROR: Invalid choices. The amount of destination choices do not match with the amount of page prompts.");
+                Console.ReadKey(true);
                 return true;
             }
             return false;
